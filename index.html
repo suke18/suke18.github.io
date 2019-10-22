@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Kenong Su @ Emory Bioinfo</title>
+	<meta name="google-site-verification" content="_icP2W3B6y_gFG92Dh-caUWIh_sEnE4tPu8pghzaH2w" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+
+	      var hash = this.hash;
+
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 500, function(){
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
+	</script>
+</head>
+
+<body id="about">
+  <div class="banner">
+    <div id="header">
+      <div id="name">
+        Kenong Su
+        <img src="images/logo1.jpg" alt=""align="top">
+      </div>
+      <div id="navigator">
+        <div class="nav_cell"><a class="nav" href="index.html">about</a></div>
+        <div class="nav_cell"><a class="nav" href="research.html">research</a></div>
+        <div class="nav_cell"><a class="nav" href="experience.html">experience</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+<div class="title">Welcome to my website</div>
+    <div class="content">
+      <a class="anchor" id="about"></a>
+      <div class="introduction">
+        <div id="selfie">
+          <img src="images/selfie.jpg" /><br>
+          <div style="text-align: center; margin-top: 10px; font-size: 12px; font-family: monospace;">
+            <p class="view"><a href="kenong.su@emory.edu">Contact Me </a></p></div>
+
+        </div>
+        <div class="right">
+            <p>I am a fourth-year computer science (with bioinformatics concentration) phd student (with candidacy) at Emory University. It is a pleasure to work with my advisor <a class="link" href="http://www.haowulab.org/" target="_blank">Hao Wu. </a>
+        </p>
+        <p>
+        I got my B.S. in Statistics from the
+        <a class="link" href="http://www.stat.uiowa.edu/" target="_blank">Department of Statistics & Actuarial Science</a> at the <a class="link" href="https://www.uiowa.edu/" target="_blank">University of Iowa</a> in May 2016.
+        For the first three years during my phd career, I explored a wide range of topics in bioinformatics including: pathway analysis, transcription factor activity inference, and scRNA-seq power assessment. After that, I focus on statistical modeling and learning in scRNA-seq area.
+        Some of the codes for my research are available on <a class="link" href="https://github.com/suke18" target="_blank">GitHub</a>.
+        </p>
+      </div>
+    </div>
+
+        <div class="subtitle">
+          News
+        </div>
+        <ul id="news">
+          <li>(2019.5) My son was born on the May 1st. 
+          </li>
+          <li>(2019.4) I past my phd qualify exam.
+          </li>
+        </ul>
+        </div>
+
+
+
+
+
+
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+		var sc_project=10595714;
+		var sc_invisible=1;
+		var sc_security="ee39bc4f";
+		var scJsHost = (("https:" == document.location.protocol) ?
+			"https://secure." : "http://www.");
+		document.write("<sc"+"ript type='text/javascript' src='" +
+			scJsHost+
+			"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="shopify visitor
+		statistics" href="http://statcounter.com/shopify/"
+		target="_blank"><img class="statcounter"
+		src="http://c.statcounter.com/10595714/0/ee39bc4f/1/"
+		alt="shopify visitor statistics"></a></div></noscript>
+		<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

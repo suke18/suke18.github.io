@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Kenong Su @ Emory Bioinfo</title>
+	<meta name="google-site-verification" content="_icP2W3B6y_gFG92Dh-caUWIh_sEnE4tPu8pghzaH2w" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+
+	      var hash = this.hash;
+
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 500, function(){
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
+	</script>
+</head>
+
+<body>
+  <div class="banner">
+    <div id="header">
+      <div id="name">
+        Kenong Su
+      <img src="images/logo1.jpg" alt=""align="top">
+      </div>
+      <div id="navigator">
+        <div class="nav_cell"><a class="nav" href="index.html">about</a></div>
+        <div class="nav_cell"><a class="nav" href="research.html">research</a></div>
+        <div class="nav_cell"><a class="nav" href="experience.html">experience</a></div>
+      </div>
+    </div>
+  </div>
+  <div id="main">
+
+    <div class="content">
+      <div class="title">Projects</div>
+      <a class="anchor" id="research"></a>
+
+      <div class="subtitle">Theory and Methodology</div>
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/iPath_fig.jpg">
+          <div class="right">
+            <div class="research_title">
+              <mark style="background-color: #D3D3D3">iPath</mark> using pre-defined gene sets at the individual level reveals novel biomarkers that link to clinical prognosis.
+            </div>
+            <p>
+            Multiple single-gene biomarkers have already been identified and used in
+            the clinics. However, multiple oncogenes or tumor-suppressor genes are involved during the process of
+            tumorigenesis for each individual patient. Additionally, the efficacy of single-gene biomarkers is limited
+            by the extensively variable expression levels measured by high-throughput assays. Inspired by the success
+            of Gene Set Enrichment Analysis (GSEA), in this study, we advocate for the use of individual-level
+            expression patterns of pre-defined pathways or gene sets as biomarkers. We devised a novel computational method named
+            iPath to identify, at the individual sample level, which pathways or gene sets significantly deviate from their norms.
+            </p>
+          </div>
+        </div>
+        <div class="publication">
+			  <span class="emph">K. Su</span>, R. Shen, S. Sun, C.S. Moreno, X. Li, and Z. Qin*<br>
+			  Comprehensive pan-cancer analysis of the transcription of pre-defined gene sets at the individual level reveals novel biomarkers that link to clinical prognosis. <br>
+			  <i>Under Review in Nature Communication, Submitted in Aug. 2019 </i><br>
+			  (<a class="link" href="https://suke18.shinyapps.io/iPath/" target="_blank">shiny app</a>)
+			  (<a class="link" href="https://github.com/suke18/iPath" target="_blank">code</a>)
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/powsc_plot.jpeg">
+          <div class="right">
+            <div class="research_title">
+              <mark style="background-color: #D3D3D3">POWSC</mark> Power Evaluation and Sample Size Recommendation for Single Cell RNA-seq.
+            </div>
+            <p>
+            Determining the sample size for adequate power to detect statistical significance is a crucial step at the design stage for high-throughput experiments. We propose POWSC, a simulation-based method, to provide power evaluation and sample size recommendation for single-cell RNA sequencing analysis.
+            POWSC consists of a data simulator that creates realistic expression data, and a power assessor that provides a comprehensive evaluation and visualization of the power and sample size relationship. The data simulator in POWSC outperforms other two state-of-art simulators in capturing key characteristics
+            of real datasets. The power assessor in POWSC provides a variety of power evaluations including stratified and marginal power analyses for two forms of DE under different comparison scenarios.
+          </div>
+        </div>
+        <div class="publication">
+			  <span class="emph">K. Su</span>, Z. Wu, H. Wu*<br>
+			  Power Evaluation and Sample Size Recommendation for Single Cell RNA-seq.<br>
+			  <i>Under Review in Bioinformatics, Submitted in July 2019</i><br>
+			  (<a class="link" href="https://github.com/suke18/POWSC/" target="_blank">code</a>)
+        </div>
+      </div>
+
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/netact1.png">
+          <div class="right">
+            <div class="research_title">
+              <mark style="background-color: #D3D3D3">NetAct</mark> a computational tool for constructing transcription factor network using activity.
+            </div>
+          	<p>
+              We developed a computational algorithm for constructing transcription-factor-based network, named NetAct,
+              using both transcriptomic data and literature-based transcription factor-target databases.
+              Combining both resources allows us to identify regulatory genes and links specific to the data and fully take
+              advantage of the existing knowledgebase of transcriptional regulation.The algorithm is unique in (1) inferring the activities of regulators
+              for individual samples using the gene expression of their targeted genes, (2) identifying the regulatory interactions between two regulators
+              based on the activity instead of the mRNA expression, (3) integrating mathematical modeling for in silico validation.
+            </p>
+
+          </div>
+        </div>
+        <div class="publication">
+        <span class="emph">K. Su</span>, V. Kohar, A. Katebi, D. Gordin, Z. Qin, K. Karuturi, S. Li, M. Lu*<br>
+			    NetAct: a computational algorithm to construct core transcription factor regulatory network using gene activity.<br>
+			    <i>In Preparation</i><br>
+			    (<a class="link" href="https://github.com/TheJacksonLaboratory/NetAct" target="_blank">private code</a>)
+        </div>
+      </div>
+
+      <div class="subtitle">Application and Collaboration</div>
+      <div class="block">
+        I have been actively working on NGS data including <span class="emph">RNA-seq</span>, <span class="emph">scRNA-seq</span>, and <span class="emph">BS-seq</span>.
+      </div>
+      <div class="block">
+        <div class="abstract">
+            <div class="application_title">
+              Sliced human cortical organoids for modeling distinct cortical neuronal layer formation.
+            </div>
+            <div class="publication">
+              x. Qian , y. Su , C. Adam , A. Deutschmann ,  <span class="emph">K. Su</span> , S. Li , L. Lu , E. Goldberg ,F. Jacob , P. Nguyen , S. Huh , A. Hoke , S. Swinfodr-jackson , Z. Wen , X. Gu , C. Pierce , H. Wu , L. Briand , I. Chen , J. Wolf , H. Song
+              <br><i>Under Review in Cell</i>, <br>
+            </div>
+          </div>
+      </div>
+
+      <!-- <div class="block">
+        <div class="abstract">
+            <div class="application_title">
+              An analytical framework for whole genome sequence data and its implications for autism spectrum disorder.
+            </div>
+            <div class="publication">
+              D. Werling*, H. Brand*, J. An*, M. Stone*, <span class="emph">L. Zhu</span>*, J. Glessne, R. Collins, S. Dong, R. Layer, E. Markenscoff-Papadimitriou, A. Farrell, G. Schwartz,  H. Wang, B. Currall,  X. Zhao, J. Dea, C. Duhn, C. Erdman, M. Gilson, R. Handsaker, S. Kashin, L. Klei, J. Mandell, T. Nowakowski, Y. Liu, S. Pochareddy, L. Smith, M. Walker, M. Waterman, X. He, A. Kriegstein, J. Rubenstein, N. Sestan, S. McCarroll, B. Neale, H. Coon, A. Willsey, J. Buxbaum, M. Daly, M. State, A. Quinlan, G. Marth, K. Roeder, B. Devlin, M. Talkowski, S. Sanders (2018)
+              <br><i>Nature Genetics</i>, 50(5):727–736. (*Equal contributions) <br>
+              (<a class="link" href="https://www.nature.com/articles/s41588-018-0107-y" target="_blank">manuscript</a>)
+              (<a class="link" href="https://www.nature.com/articles/s41588-018-0113-0" target="_blank">news & views</a>)
+			      </div>
+          </div>
+      </div> -->
+
+
+
+    </div>
+
+
+
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+		var sc_project=10595714;
+		var sc_invisible=1;
+		var sc_security="ee39bc4f";
+		var scJsHost = (("https:" == document.location.protocol) ?
+			"https://secure." : "http://www.");
+		document.write("<sc"+"ript type='text/javascript' src='" +
+			scJsHost+
+			"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="shopify visitor
+		statistics" href="http://statcounter.com/shopify/"
+		target="_blank"><img class="statcounter"
+		src="http://c.statcounter.com/10595714/0/ee39bc4f/1/"
+		alt="shopify visitor statistics"></a></div></noscript>
+		<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

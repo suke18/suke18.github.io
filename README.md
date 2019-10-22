@@ -1,2 +1,1 @@
-# suke18.github.io
-My webiste
+Welcome to my [personal website](https://lingxuez.github.io/)!

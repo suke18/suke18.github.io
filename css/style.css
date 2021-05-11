@@ -156,3 +156,16 @@ ul#news li {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    text-align: left;
+}
